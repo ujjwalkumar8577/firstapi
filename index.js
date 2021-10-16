@@ -1,5 +1,5 @@
 const express = require('express');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 
@@ -13,7 +13,7 @@ const app = express();
 // });
 
 // morgan middleware
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 
 app.use(express.json({}));
 app.use(express.json({
